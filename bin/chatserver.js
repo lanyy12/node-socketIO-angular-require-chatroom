@@ -100,6 +100,7 @@ var socketIO = require('socket.io'),
   sockets = {};
 
 exports.setChatRoom = function (roomArr, server) {
+
   for (var i = 0; i < roomArr.length; i++) {
     var obj = Object.create(room);
     obj.id = roomArr[i].id;
@@ -111,7 +112,6 @@ exports.setChatRoom = function (roomArr, server) {
     chatSystemObject[roomArr[i].id].roomUsers = [];
     chatSystemObject[roomArr[i].id].sockets = [];
   }
-
   initServer(server);
 };
 
@@ -130,8 +130,8 @@ function updateRoomUsers(roomId,userId){
   updataRoomInfo();
 }
 function sendUserRoomList(socketId){
-  console.log("send roomlist user:");
-  console.log(sockets[socketId].roomId);
+  //console.log("send roomlist user:");
+  //console.log(sockets[socketId].roomId);
   sockets[socketId].socket.emit("roomlist user",sockets[socketId].roomId);
 }
 function updataRoomInfo(){
@@ -313,7 +313,11 @@ function responseToRoomUsers(roomId){
     length = socketsArr.length,
     i = 0;
   for(;i<length;i++){
-    sockets[socketsArr[i]].socket.emit('room users',roomUsers)
+    if(sockets[socketsArr[i]]){
+      sockets[socketsArr[i]].socket.emit('room users',roomUsers);
+    }else{
+      socketsArr.splice(i,1);   //这里需要继续修改，这种情况下用户在线数还没有更改。
+    }
   }
 }
 /**
@@ -375,7 +379,7 @@ function initPrivateChat(socket){
 function initDisconnect(socket){
   //用户点击退出房间。在应用层断开连接。
   socket.on('leave room',function(msg){
-    console.log('leave room');
+    //console.log('leave room');
     var userId = msg.userId,
       roomId = msg.roomId,
       socketId = socket.id,
@@ -391,7 +395,7 @@ function initDisconnect(socket){
   });
   //用户刷新或关闭浏览器。在物理层断开连接。会断开用户连接的所有房间。
   socket.on('disconnect',function(){
-    console.log('user disconnected');
+    //console.log('user disconnected');
     var socketId = socket.id,
       socketObject = sockets[socketId] || {},
       userId = socketObject.userId,
@@ -420,8 +424,8 @@ function initServer(server) {
   io = socketIO(server);
   io.on('connection', function (socket) {
     //io.emit('room info', roomInfo);
-    console.log("user connected");
-    console.log(socket.id);
+    //console.log("user connected");
+    //console.log(socket.id);
     //启动获取房间列表socket监听。
     initGetRoomList(socket);
     //启动加入房间socket监听。

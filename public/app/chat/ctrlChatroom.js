@@ -8,7 +8,7 @@ define(['chat/socket.io'], function(socket) {
     // You can access the scope of the controller from here
     console.log('this is chat room');
     if(!$rootScope.socket){
-      $rootScope.socket = socket('192.168.1.39:3000');
+      $rootScope.socket = socket('127.0.0.1:3000');
     }
     if($rootScope.socket.connected ===false){
       $rootScope.socket.connect();

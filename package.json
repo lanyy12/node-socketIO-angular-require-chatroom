@@ -33,6 +33,8 @@
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "local-test": "node node_modules/karma/bin/karma start test/karma.local.conf.js",
+    "protractor":"protractor test/protractor-conf.js"
   }
 }
