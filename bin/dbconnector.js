@@ -26,7 +26,8 @@ exports.connect =  function(server){
       {"name":"东方不败","id":"4","onlineUser":"100"},
       {"name":"令狐聪","id":"5","onlineUser":"100"},
       {"name":"韦小宝","id":"6","onlineUser":"100"},
-      {"name":"风云","id":"7","onlineUser":"100"}],server);
+      {"name":"雄霸天下","id":"7","onlineUser":"100"},
+      {"name":"风云","id":"8","onlineUser":"100"}],server);
     //使用房间和namespace对应方式实现聊天。
     //chatroomServer.initChatRoom(rows,server);
   //});
