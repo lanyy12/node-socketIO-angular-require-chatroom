@@ -1,20 +1,112 @@
-[2976]       52 ms: Scavenge 2.0 (37.5) -> 1.7 (37.5) MB, 0.8 ms [allocation failure].
-[2976]       53 ms: Scavenge 2.0 (37.5) -> 2.0 (38.5) MB, 0.7 ms [allocation failure].
-[2976]       75 ms: Scavenge 3.1 (39.5) -> 2.9 (39.5) MB, 0.5 ms [allocation failure].
-[2976]       80 ms: Scavenge 4.5 (39.5) -> 4.4 (40.5) MB, 1.1 ms [allocation failure].
-[2976]       82 ms: Scavenge 5.0 (40.5) -> 5.0 (41.5) MB, 1.3 ms [allocation failure].
-[2976]       85 ms: Scavenge 8.3 (41.5) -> 8.2 (42.5) MB, 2.1 ms [allocation failure].
-[2976]       88 ms: Scavenge 8.9 (42.5) -> 8.8 (45.5) MB, 2.6 ms [allocation failure].
-[2976] Increasing marking speed to 3 due to high promotion rate
-[2976]      109 ms: Scavenge 16.0 (45.5) -> 15.7 (46.5) MB, 4.1 ms (+ 13.2 ms in 107 steps since last GC) [allocation failure].
-[2976]      119 ms: Scavenge 16.6 (46.5) -> 16.6 (53.5) MB, 5.1 ms (+ 4.2 ms in 14 steps since last GC) [allocation failure].
-[2976]      158 ms: Mark-sweep 23.5 (53.5) -> 23.1 (53.5) MB, 5.1 ms (+ 50.4 ms in 222 steps since start of marking, biggest step 0.5 ms) [GC interrupt] [GC in old space requested].
-[2976]      169 ms: Scavenge 32.1 (53.5) -> 31.8 (60.5) MB, 7.8 ms [allocation failure].
-[2976]      179 ms: Scavenge 38.6 (60.5) -> 38.6 (69.5) MB, 7.8 ms [allocation failure].
-[2976]      188 ms: Scavenge 47.6 (69.5) -> 47.5 (76.5) MB, 7.5 ms [allocation failure].
-[2976]      196 ms: Scavenge 54.3 (76.5) -> 54.3 (85.5) MB, 7.7 ms [allocation failure].
-[2976]      205 ms: Scavenge 63.2 (85.5) -> 63.2 (92.5) MB, 7.5 ms [allocation failure].
-[2976]      214 ms: Scavenge 70.1 (92.5) -> 69.6 (101.5) MB, 7.5 ms [allocation failure].
-[2976]      222 ms: Scavenge 78.9 (101.5) -> 78.9 (108.5) MB, 7.2 ms [allocation failure].
-[2976] Increasing marking speed to 3 due to high promotion rate
-[2976]      244 ms: Scavenge 85.4 (108.5) -> 85.3 (117.5) MB, 8.5 ms (+ 12.3 ms in 98 steps since last GC) [allocation failure].
+[3205]       58 ms: Scavenge 2.0 (37.5) -> 1.7 (37.5) MB, 0.7 ms [allocation failure].
+[3205] Memory allocator,   used:  38372 KB, available: 1460764 KB
+[3205] New space,          used:    653 KB, available:    370 KB, committed:   2048 KB
+[3205] Old pointers,       used:    399 KB, available:      0 KB, committed:    896 KB
+[3205] Old data space,     used:    189 KB, available:      0 KB, committed:    192 KB
+[3205] Code space,         used:    400 KB, available:      0 KB, committed:    996 KB
+[3205] Map space,          used:     65 KB, available:      0 KB, committed:    128 KB
+[3205] Cell space,         used:      2 KB, available:      0 KB, committed:    128 KB
+[3205] PropertyCell space, used:     25 KB, available:      0 KB, committed:     64 KB
+[3205] Large object space, used:      0 KB, available: 1459723 KB, committed:      0 KB
+[3205] All spaces,         used:   1736 KB, available:    370 KB, committed:   4452 KB
+[3205] External memory reported:      0 KB
+[3205] Total time spent in GC  : 0.7 ms
+[3205]       60 ms: Scavenge 2.0 (37.5) -> 2.0 (38.5) MB, 0.8 ms [allocation failure].
+[3205] Memory allocator,   used:  39396 KB, available: 1459740 KB
+[3205] New space,          used:    346 KB, available:    677 KB, committed:   2048 KB
+[3205] Old pointers,       used:    818 KB, available:      0 KB, committed:    896 KB
+[3205] Old data space,     used:    423 KB, available:      2 KB, committed:   1199 KB
+[3205] Code space,         used:    400 KB, available:      0 KB, committed:    996 KB
+[3205] Map space,          used:     65 KB, available:      0 KB, committed:    128 KB
+[3205] Cell space,         used:      2 KB, available:      0 KB, committed:    128 KB
+[3205] PropertyCell space, used:     25 KB, available:      0 KB, committed:     64 KB
+[3205] Large object space, used:      0 KB, available: 1458699 KB, committed:      0 KB
+[3205] All spaces,         used:   2083 KB, available:    679 KB, committed:   5459 KB
+[3205] External memory reported:      0 KB
+[3205] Total time spent in GC  : 1.4 ms
+[3205]       82 ms: Scavenge 3.1 (39.5) -> 3.0 (39.5) MB, 0.5 ms [allocation failure].
+[3205] Memory allocator,   used:  40420 KB, available: 1458716 KB
+[3205] New space,          used:    504 KB, available:   1543 KB, committed:   4096 KB
+[3205] Old pointers,       used:    973 KB, available:      0 KB, committed:   1903 KB
+[3205] Old data space,     used:    832 KB, available:      2 KB, committed:   1199 KB
+[3205] Code space,         used:    560 KB, available:      0 KB, committed:    996 KB
+[3205] Map space,          used:    120 KB, available:      0 KB, committed:    128 KB
+[3205] Cell space,         used:      4 KB, available:      0 KB, committed:    128 KB
+[3205] PropertyCell space, used:     25 KB, available:      0 KB, committed:     64 KB
+[3205] Large object space, used:      0 KB, available: 1457675 KB, committed:      0 KB
+[3205] All spaces,         used:   3021 KB, available:   1545 KB, committed:   8515 KB
+[3205] External memory reported:      8 KB
+[3205] Total time spent in GC  : 1.9 ms
+[3205]      131 ms: Scavenge 5.1 (40.5) -> 4.1 (41.5) MB, 1.0 ms [allocation failure].
+[3205] Memory allocator,   used:  42468 KB, available: 1456668 KB
+[3205] New space,          used:    493 KB, available:   1554 KB, committed:   4096 KB
+[3205] Old pointers,       used:   1295 KB, available:      0 KB, committed:   1903 KB
+[3205] Old data space,     used:   1299 KB, available:     22 KB, committed:   2207 KB
+[3205] Code space,         used:    831 KB, available:      0 KB, committed:    996 KB
+[3205] Map space,          used:    238 KB, available:      0 KB, committed:   1135 KB
+[3205] Cell space,         used:      6 KB, available:      0 KB, committed:    128 KB
+[3205] PropertyCell space, used:     25 KB, available:      0 KB, committed:     64 KB
+[3205] Large object space, used:      0 KB, available: 1455627 KB, committed:      0 KB
+[3205] All spaces,         used:   4190 KB, available:   1577 KB, committed:  10531 KB
+[3205] External memory reported:     15 KB
+[3205] Total time spent in GC  : 2.9 ms
+[3205]      155 ms: Scavenge 5.9 (41.5) -> 4.8 (41.5) MB, 0.8 ms [allocation failure].
+[3205] Memory allocator,   used:  42468 KB, available: 1456668 KB
+[3205] New space,          used:    463 KB, available:   1584 KB, committed:   4096 KB
+[3205] Old pointers,       used:   1554 KB, available:      0 KB, committed:   1903 KB
+[3205] Old data space,     used:   1671 KB, available:     22 KB, committed:   2207 KB
+[3205] Code space,         used:    920 KB, available:      0 KB, committed:    996 KB
+[3205] Map space,          used:    298 KB, available:      0 KB, committed:   1135 KB
+[3205] Cell space,         used:      7 KB, available:      0 KB, committed:    128 KB
+[3205] PropertyCell space, used:     26 KB, available:      0 KB, committed:     64 KB
+[3205] Large object space, used:      0 KB, available: 1455627 KB, committed:      0 KB
+[3205] All spaces,         used:   4941 KB, available:   1607 KB, committed:  10531 KB
+[3205] External memory reported:     15 KB
+[3205] Total time spent in GC  : 3.7 ms
+[3205]      186 ms: Scavenge 6.6 (41.5) -> 5.4 (42.5) MB, 0.8 ms [allocation failure].
+[3205] Memory allocator,   used:  43492 KB, available: 1455644 KB
+[3205] New space,          used:    368 KB, available:   3727 KB, committed:   8192 KB
+[3205] Old pointers,       used:   1948 KB, available:      0 KB, committed:   2911 KB
+[3205] Old data space,     used:   1824 KB, available:     22 KB, committed:   2207 KB
+[3205] Code space,         used:    972 KB, available:      0 KB, committed:    996 KB
+[3205] Map space,          used:    395 KB, available:      0 KB, committed:   1135 KB
+[3205] Cell space,         used:      8 KB, available:      0 KB, committed:    128 KB
+[3205] PropertyCell space, used:     26 KB, available:      0 KB, committed:     64 KB
+[3205] Large object space, used:      0 KB, available: 1454603 KB, committed:      0 KB
+[3205] All spaces,         used:   5544 KB, available:   3750 KB, committed:  15634 KB
+[3205] External memory reported:     42 KB
+[3205] Total time spent in GC  : 4.5 ms
+[3205]      227 ms: Scavenge 9.7 (43.5) -> 7.0 (43.5) MB, 1.0 ms [allocation failure].
+[3205] Memory allocator,   used:  44516 KB, available: 1454620 KB
+[3205] New space,          used:    838 KB, available:   3257 KB, committed:   8192 KB
+[3205] Old pointers,       used:   2499 KB, available:      0 KB, committed:   2911 KB
+[3205] Old data space,     used:   2146 KB, available:     22 KB, committed:   2207 KB
+[3205] Code space,         used:   1077 KB, available:      0 KB, committed:   1992 KB
+[3205] Map space,          used:    535 KB, available:      0 KB, committed:   1135 KB
+[3205] Cell space,         used:      9 KB, available:      0 KB, committed:    128 KB
+[3205] PropertyCell space, used:     26 KB, available:      0 KB, committed:     64 KB
+[3205] Large object space, used:      0 KB, available: 1453579 KB, committed:      0 KB
+[3205] All spaces,         used:   7132 KB, available:   3280 KB, committed:  16630 KB
+[3205] External memory reported:     30 KB
+[3205] Total time spent in GC  : 5.5 ms
+[3205]      259 ms: Scavenge 10.6 (44.5) -> 8.2 (45.5) MB, 1.2 ms [allocation failure].
+[3205] Memory allocator,   used:  46564 KB, available: 1452572 KB
+[3205] New space,          used:    754 KB, available:   3341 KB, committed:   8192 KB
+[3205] Old pointers,       used:   3418 KB, available:      7 KB, committed:   3919 KB
+[3205] Old data space,     used:   2415 KB, available:      0 KB, committed:   3215 KB
+[3205] Code space,         used:   1125 KB, available:      0 KB, committed:   1992 KB
+[3205] Map space,          used:    635 KB, available:      0 KB, committed:   1135 KB
+[3205] Cell space,         used:     10 KB, available:      0 KB, committed:    128 KB
+[3205] PropertyCell space, used:     26 KB, available:      0 KB, committed:     64 KB
+[3205] Large object space, used:      0 KB, available: 1451531 KB, committed:      0 KB
+[3205] All spaces,         used:   8386 KB, available:   3349 KB, committed:  18646 KB
+[3205] External memory reported:     36 KB
+[3205] Total time spent in GC  : 6.8 ms
+[3205]      317 ms: Mark-sweep init namespace[object Object]
+init namespace[object Object]
+init namespace[object Object]
+init namespace[object Object]
+init namespace[object Object]
+init namespace[object Object]
+init namespace[object Object]
+init namespace[object Object]
